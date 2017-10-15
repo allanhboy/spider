@@ -66,6 +66,8 @@ class RotateUserAgentMiddleware(UserAgentMiddleware):
     def process_request(self, request, spider):
         # 这句话用于随机选择user-agent
         ua = random.choice(self.user_agent_list)
+
+        print(ua)
         if ua:
             request.headers.setdefault('User-Agent', ua)
 

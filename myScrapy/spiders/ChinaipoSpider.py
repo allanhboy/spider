@@ -2,8 +2,6 @@ import scrapy
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 
-
-
 class ChinaipoSpider(CrawlSpider):
     name = "ChinaipoSpider"
     allowed_domains = ['chinaipo.com']
