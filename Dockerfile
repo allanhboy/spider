@@ -1,6 +1,6 @@
-FROM python:3
+FROM vimagick/scrapyd
 
 ADD . /code
 WORKDIR /code
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN scrapyd
